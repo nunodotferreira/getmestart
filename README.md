@@ -1,4 +1,4 @@
-# EasyWebStart
+# GetMeStart
 
 > An easy-to-use automated front-end setup.
 
