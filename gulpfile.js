@@ -33,7 +33,7 @@ var
 gitConfig           = {
 	user: 'nunodotferreira',
 	repo: 'getmestart-boilerplate',
-	ref:  '1.5'
+	ref:  ''
 },
 cwd                 = process.cwd(),
 tmpFolder           = '.tmp',
@@ -183,7 +183,7 @@ gulp.task('build', function (cb) {
 	fs.readFile('config.json', 'utf8', function (err, data) {
 
 		if (err) {
-			console.log(chalk.red('✘  Cannot find config.json. Have you initiated Headstart through `headstart init?'), err);
+			console.log(chalk.red('✘  Cannot find config.json. Have you initiated Getmestart through `getmestart init?'), err);
 			process.exit(0);
 		}
 
