@@ -48,7 +48,7 @@ if (notifier.update) {
 		chalk.yellow('|\n|') +
 		chalk.white(' Instructions can be found on:            ') +
 		chalk.yellow('|\n|') +
-		chalk.magenta(' http://headstart.io/upgrading-guide   ') +
+		chalk.magenta(' http://getmestart.io/upgrading-guide   ') +
 		chalk.yellow('|\n') +
 		chalk.yellow('└──────────────────────────────────────────┘\n')
 		);
@@ -105,7 +105,7 @@ function launcher (env) {
 		process.exit(0);
 	}
 
-	// Change directory to where Headstart was called from
+	// Change directory to where Getmestart was called from
 	if (process.cwd() !== env.cwd) {
 		process.chdir(env.cwd);
 		console.log(chalk.cyan('Working directory changed to', chalk.magenta(env.cwd)));
@@ -151,17 +151,17 @@ function logHeader (pkg) {
 function logTasks () {
 	console.log(
 		chalk.grey.underline('To start a new project, run:\n\n') +
-		chalk.magenta('headstart init [flags]') +
+		chalk.magenta('getmestart init [flags]') +
 		chalk.grey(' or ') +
-		chalk.magenta('hs init [flags]\n\n') +
+		chalk.magenta('gs init [flags]\n\n') +
 		chalk.white('--base <source>') +
 		chalk.grey('\t\tUse a custom boilerplate repo, eg. user/repo#branch\n')
 		);
 	console.log(
 		chalk.grey.underline('To build the project, run:\n\n') +
-		chalk.magenta('headstart build [flags]') +
+		chalk.magenta('getmestart build [flags]') +
 		chalk.grey(' or ') +
-		chalk.magenta('hs build [flags]\n\n') +
+		chalk.magenta('gs build [flags]\n\n') +
 		chalk.white('--s, --serve') +
 		chalk.grey('\t\tServe the files on a static address\n') +
 		chalk.white('--o, --open') +
@@ -183,9 +183,9 @@ function logTasks () {
 		);
 	console.log(
 		chalk.grey.underline('For information, run:\n\n') +
-		chalk.magenta('headstart [flags]') +
+		chalk.magenta('getmestart [flags]') +
 		chalk.grey(' or ') +
-		chalk.magenta('hs [flags]\n\n') +
+		chalk.magenta('gs [flags]\n\n') +
 		chalk.white('--i, --info,\n--h, --help') +
 		chalk.grey('\t\tPrint out this message\n') +
 		chalk.white('--v, --version') +

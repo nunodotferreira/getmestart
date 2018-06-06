@@ -1,6 +1,6 @@
 {
   "name": "getmestart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An easy-to-use automated front-end setup.",
   "author": {
     "name": "nunodotferreira",
@@ -23,6 +23,7 @@
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "1.0.1",
     "gulp-bytediff": "^0.2.0",
+    "gulp-clean-css": "^3.0.4",
     "gulp-combine-media-queries": "0.1.0",
     "gulp-compile-handlebars": "0.3.3",
     "gulp-concat": "^2.4.1",
@@ -47,6 +48,7 @@
     "gulp-strip-debug": "^1.0.1",
     "gulp-tap": "^0.1.1",
     "gulp-uglify": "^1.0.1",
+    "gulp-usemin": "^0.3.28",
     "gulp-uncss": "^0.4.5",
     "gulp-w3cjs": "^0.2.1",
     "gulp-watch": "^1.0.7",
