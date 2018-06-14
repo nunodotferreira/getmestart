@@ -669,6 +669,16 @@ gulp.task('templates', ['clean-rev'], function (cb) {
 					addRootSlash: false,
 					addPrefix:    config.template_asset_prefix || ''
 				}))
+				.pipe(plugins.if(config.has_usemin, plugins.usemin({ 
+		            //THIS MINIFYES ALL
+		            //css: [rev()],
+		            //html: [ htmlmin({ collapseWhitespace: true }) ],
+		            //js: [uglify(), rev()],
+		            //inlinejs: [ uglify() ],
+		            //inlinecss: [ cleanCss(), 'concat' ]
+		            css: [],
+		            js: []
+		        })))
 				.pipe(plugins.if(config.w3c && ext === 'html', plugins.w3cjs({
 					doctype: 'HTML5',
 					charset: 'utf-8'
@@ -704,7 +714,7 @@ gulp.task('templates', ['clean-rev'], function (cb) {
 					unvalidatedFiles.push(baseName);
 				}
 			}))
-	;
+;
 });
 
 // MANIFEST -------------------------------------------------------------------

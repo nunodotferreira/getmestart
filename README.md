@@ -4,7 +4,7 @@
 
 ## Documentation
 
-You can find the Getting started, or the html/js/css guide.
+Install guide, with usemin.
 
 > npm install -g getmestart
 
